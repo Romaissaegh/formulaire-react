@@ -1,0 +1,15 @@
+.Section_Title{
+    font-size: 0.9cm;
+    margin-top: 0.7cm;
+    margin-bottom: 0.5cm;
+    font-weight: bolder;
+}
+.FLS{
+    color: red;
+    margin-right: 0;
+}
+.RMS{
+    color: black;
+    margin-left: 0;
+    overflow-x: hidden;
+}

@@ -1,0 +1,21 @@
+.Contact{
+  text-align: center;
+  margin-left: 0.2cm;
+  margin-right: 0.2cm;
+}
+.Contacts{
+  text-align: center;
+  margin-left: 0.25cm;
+  margin-right: 0.25cm;
+  display: inline;
+  font-size: 0.3cm;
+  color: #545454;
+}
+.Username{
+  color: rgb(0, 0, 0);
+  font-size: 0.3cm;
+}
+.Logo{
+  width:15px;
+  margin-right: 0.05cm;
+}

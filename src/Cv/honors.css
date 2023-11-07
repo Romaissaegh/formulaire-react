@@ -1,0 +1,31 @@
+.honors{
+    margin-left: 2%;
+    display: flex;
+    font-size: medium;
+    flex-direction: row;
+}
+.date{
+    display: block;
+    width: 8%;
+    color: black;
+}
+.result{
+    display: block;
+    width: 12%;
+    color: #545454;
+
+}
+.name{
+    display: block;
+    width: 50%;
+    color: black;
+    font-weight: bold;
+    
+}
+.location{
+    display: block;
+    width: 30%;
+    color: red;
+    text-align-last: right;
+    font-size: small;
+}

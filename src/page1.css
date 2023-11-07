@@ -1,0 +1,33 @@
+
+.SingleLine{
+    background-color: rgba(10, 3, 17, 0.489);
+    width: 64%;
+    margin-left: 8%;
+    margin-top: 0.3cm;
+}
+.SingleLineInput{
+    background-color: #ff000024;
+    width :92%;
+    margin-left: 4%;
+    margin-right: 4%;
+    margin-top: 1%;
+    margin-bottom: 1%;
+    color: black;
+}
+::placeholder{
+    color: black;
+    opacity: 0.5;
+}
+.SingleLineText{
+    margin-left: 4%;
+}
+.MultipleLinesInput{
+    background-color: #ff000024;
+    width :85%;
+    height: 140px;
+    resize: none;
+    margin-left: 4%;
+    margin-right: 4%;
+    margin-top: 1%;
+    margin-bottom: 1%;
+}

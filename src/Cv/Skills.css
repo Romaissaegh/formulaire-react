@@ -1,0 +1,30 @@
+.LeftBox{
+    display: block;
+    width:15%;
+    height: 30px;
+  }
+  .RightBox{
+    display: block;
+    width: 40%;
+    height: 30px;
+  }
+  .MidBox{
+    width: 5%;
+  }
+  .atend{
+    text-align-last: right;
+  }
+  .gray{
+    color: #545454;
+    font-weight: bolder;
+  }
+  .midsz{
+    font-size: 0.5cm;
+  }
+  .midlo{
+    font-size: 0.5cm;
+  }
+  .block{
+    display: flex;
+    flex-direction:row;
+  }

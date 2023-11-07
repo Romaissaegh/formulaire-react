@@ -1,0 +1,23 @@
+.description{
+    font-size: 0.5cm;
+    color: #545454;
+    text-indent: 100px;
+}
+.BigName{
+    font-size: 0.6cm;
+    font-weight: bolder;
+    color: #282828;
+}
+.SMName{
+    font-size: 0.3cm;
+    color:red;
+    float:right ;
+}
+.midText{
+    font-size: 0.4cm;
+    color: #545454;
+    text-align: center;
+}
+.Education{
+    margin-bottom: 0.3cm;
+}
