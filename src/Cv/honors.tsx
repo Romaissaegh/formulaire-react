@@ -1,9 +1,9 @@
 import './honors.css'
 interface Hon{
-    date:string,
-    result: string,
-    name: string,
-    location: string;
+    date:String,
+    result: String,
+    name: String,
+    location: String;
 }
 export default function Honor(A:Hon){
     return (
