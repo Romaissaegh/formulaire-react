@@ -1,5 +1,3 @@
-import React from 'react'
-import ReactDOM from 'react-dom/client'
 import App from './App.tsx'
 import Add_Contacts from './Contacts.tsx'
 import CodeforcesLogo from "./assets/Codeforces logo.png";

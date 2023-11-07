@@ -1,11 +1,17 @@
 import './honors.css'
-export default function Honor({date,result,name,location}){
+interface Hon{
+    date:string,
+    result: string,
+    name: string,
+    location: string;
+}
+export default function Honor(A:Hon){
     return (
         <div className="honors">
-            <section className="date">{date}</section>
-            <section className="result">{result}</section>
-            <section className="name">{name}</section>
-            <section className="location">{location}</section>
+            <section className="date">{A.date}</section>
+            <section className="result">{A.result}</section>
+            <section className="name">{A.name}</section>
+            <section className="location">{A.location}</section>
         </div>
     );
 }

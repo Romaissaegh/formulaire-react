@@ -1,10 +1,13 @@
 import './Global.css'
-export default function Entete({T}){
+interface K{
+    T:String[];
+}
+export default function Entete(A:K){
     return(
         <>
-        <h1>{T[0]}</h1>
-        {T[1] &&(
-            <h2>{T[1]}</h2>
+        <h1>{A.T[0]}</h1>
+        {A.T[1] &&(
+            <h2>{A.T[1]}</h2>
         )}
         </>
     );

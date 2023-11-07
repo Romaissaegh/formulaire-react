@@ -1,4 +1,4 @@
-import { Component } from 'react';
+
 import './texts.css'
 interface Texts{
     content:string[];
@@ -14,12 +14,3 @@ function Descr(content:Texts){
 }
 
 export default Descr;
-function Event(content:Texts){
-    return (
-        <div className='Event'>
-            <div className='SMName'>{content.content[0]}</div>
-            &en=
-            <div className='SMName'>{content.content[1]}</div>
-        </div>
-    );
-}

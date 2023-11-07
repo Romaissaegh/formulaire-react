@@ -1,17 +1,22 @@
 import './page1.css'
-import { useRef } from 'react';
-const FirstName=<section className='SingleLine'><label className='Name'>First Name: </label><br/> <input type='text' className='SingleLineInput'/></section>
-function SLT({T}){
+interface Ti{
+    T:String[];
+}
+interface K{
+    L:String[][],
+    n:number;
+}
+function SLT(A:Ti){
     return (
-        <section id={T[4]} className='SingleLine'><label className='SingleLineText'>{T[1]} </label><br/><input id={T[3]+'Input'} type={T[0]} placeholder={T[2]} className='SingleLineInput' /></section>
+        <section className='SingleLine'><label className='SingleLineText'>{A.T[0]} </label><br/><input id={A.T[2]+'Input'} placeholder={A.T[1]+''} className='SingleLineInput'/></section>
     );
 }
-function Page1rep({L,n}){
-    if(n>=L.length)return (<></>);
+function Page1rep(A:K){
+    if(A.n>=A.L.length)return (<></>);
     return (
         <>
-        <SLT T={L[n]}/>
-        <Page1rep L={L} n={n+1}/>
+        <SLT T={A.L[A.n]}/>
+        <Page1rep L={A.L} n={A.n+1}/>
         </>
     );
 }

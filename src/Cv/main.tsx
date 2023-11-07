@@ -1,34 +1,15 @@
-import React from 'react'
-import ReactDOM from 'react-dom/client'
 import Entet from './Entete.tsx'
 import './index.css'
 import Section_Title from './section_title.tsx'
 import Descr from './text.tsx'
 import Skill from './Skills.tsx'
 import Honor from './honors.tsx'
-import { useState } from 'react'
 import Organisation from './Organisation.tsx'
-import html2canvas from 'html2canvas';
-import jsPDF from 'jspdf';
 import Fft from './footer.tsx'
 function Inst(){
-  const [loader, setLoader] = useState(false);
-  const downloadPDF= () =>{
-    const capture = document.querySelector('.actual-My_CV');
-    setLoader(true);
-    html2canvas(capture).then((canvas)=>{
-      const imgData = canvas.toDataURL('img/png');
-      const doc = new jsPDF('p', 'mm', 'a4');
-      const componentWidth = doc.internal.pageSize.getWidth()*0.9;
-      const componentHeight = doc.internal.pageSize.getHeight()*0.9;
-      doc.addImage(imgData, 'PNG', componentWidth/20, componentHeight/36, componentWidth+componentWidth/20, componentHeight+componentHeight/36);
-      setLoader(false);
-      doc.save('My_CV.pdf');
-    })
-  }
   return (
     <div className='page'>
-      <div className="actual-My_CV">
+      <div className="actual-My_CV" id="actual-My_CV">
     <Entet></Entet>
     <Section_Title title='Summary'></Section_Title>
     <Descr content={["I am a competitive programmer & a computer science student. I started my programming journey through MOI when I was in middle school, where I improved my problem solving skills during the last 6 years."]}></Descr>
@@ -79,22 +60,6 @@ function Inst(){
     </section>
     <Fft/>
     </div>
-    <div >
-            <div >
-              <button
-                
-                onClick={downloadPDF}
-                disabled={!(loader===false)}
-              >
-                {loader?(
-                  <span>Downloading</span>
-                ):(
-                  <span>Download</span>
-                )}
-
-              </button> 
-            </div>
-          </div>
     </div>
   );
 }
